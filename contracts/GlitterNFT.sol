@@ -21,7 +21,7 @@ contract GlitterNFT is ERC721, ERC721URIStorage {
     }
     
     function _baseURI() internal pure override returns (string memory) {
-        return "https://github.com/2pai/nft-erc721/item/";
+        return "https://raw.githubusercontent.com/2pai/nft-erc721/main/item/";
     }
     
     function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {
