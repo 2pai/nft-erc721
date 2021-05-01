@@ -4,11 +4,11 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract Support2Pai is ERC721, ERC721URIStorage {
+contract GlitterNFT is ERC721, ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("Support2Pai", "SUPX") public {}
+    constructor() ERC721("GlitterNFT", "GNFT") public {}
     
     function mintGlitter() public returns (uint256) {
 

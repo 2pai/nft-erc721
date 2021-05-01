@@ -1,5 +1,5 @@
-const Migrations = artifacts.require("Migrations");
+const GlitterNFT = artifacts.require("GlitterNFT");
 
 module.exports = function (deployer) {
-  deployer.deploy(Migrations);
+  deployer.deploy(GlitterNFT);
 };
