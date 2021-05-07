@@ -1,0 +1,12 @@
+{
+    "rewrites":[
+        {
+            "source":"/glitter/:id",
+            "destination": "/api/GlitterNFT.js"
+        },
+        {
+            "source":"/",
+            "destination": "/frontend/index.html"
+        }
+    ]
+}
