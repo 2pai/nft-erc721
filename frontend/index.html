@@ -37,13 +37,14 @@
     var GlitterNFT
     var networkETH
     const supportedNetwork = 'rinkeby'
+    const contractAddress = '0x8Cb273cA2692E1f54b79bD55B5a05c7334aa07f6'
 
     window.addEventListener("load", function(){
     
     const ethEnabled = () => {
         if (window.ethereum) {
             window.web3 = new Web3(window.ethereum);
-            GlitterNFT = new window.web3.eth.Contract(ABI.abi,"0x8Cb273cA2692E1f54b79bD55B5a05c7334aa07f6") 
+            GlitterNFT = new window.web3.eth.Contract(ABI.abi,contractAddress) 
             window.ethereum.enable();
             return true;
         }
